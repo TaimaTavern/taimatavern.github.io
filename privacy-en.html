@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy for Pass or Blast</title>
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="lang"><a href="privacy-ru.html">Русский</a> <a href="delete-account-en.html">Delete your account</a></p>
+<h1>Pass or Blast Privacy Policy</h1>
+<p class="meta">Effective November 10, 2026. Applies to the Android game "Pass or Blast" (com.taimatavern.passorblast) by Taima Tavern.</p>
+
+<h2 id="who">1. Who we are</h2>
+<p>Pass or Blast is published by Taima Tavern. Data controller: Matvei Katkov, Thailand. For any question about your data write to <a href="mailto:taimatavern@gmail.com">taimatavern@gmail.com</a>. We reply within 30 days, usually sooner.</p>
+
+<h2 id="short">2. The short version</h2>
+<ul>
+<li>The game is online. On first launch the server creates an account on its own. We don't ask for your name, email or phone number.</li>
+<li>Our server holds: an account number, a nickname, your progress, friends, reports and a technical log with IP addresses. Full list in section 3.</li>
+<li>Other players can see your nickname. The game has chat between players.</li>
+<li>Ads are rewarded only, shown when you tap a button. They come from the Yandex ads SDK, which collects device data on its own (section 5).</li>
+<li>There are no purchases in the game.</li>
+<li>The game is for ages 13 and up.</li>
+<li>You can delete your account in the game or by email (section 8).</li>
+</ul>
+
+<h2 id="data">3. What we keep on our server</h2>
+<p>The game server is rented from Hetzner, in a data center in Germany. The data sits in a SQLite database file.</p>
+<table>
+<tr><th>What</th><th>Why</th></tr>
+<tr><td>Account number and device token (a random string issued by the server)</td><td>Recognize you on login, keep your progress</td></tr>
+<tr><td>Progress: level, league, caps, keys, stashes, heroes, skins, daily jobs, stats, nickname</td><td>The game and cloud save</td></tr>
+<tr><td>Google Play Games player ID, if you linked Google sign-in</td><td>Moving the account to another phone, protecting the invite bonus</td></tr>
+<tr><td>Time zone offset in minutes, account creation time and last login time</td><td>Switching the game day, running the server</td></tr>
+<tr><td>Friends, friend requests, list of blocked players, recent opponents</td><td>Social features</td></tr>
+<tr><td>Reports: the reporter's number, the reported player's number and nickname, up to 10 of that player's latest messages at the time of the report</td><td>Moderation. Kept 90 days, then deleted automatically</td></tr>
+<tr><td>Chat messages: the latest 50 in the shared channel and the latest 30 in a party channel</td><td>Showing chat. Held in server memory only; not written to disk or to database backups; gone when the server restarts</td></tr>
+<tr><td>Server technical log: time, account number, connection IP address and port, disconnect reason, network stats</td><td>Running the server, finding faults, preventing abuse</td></tr>
+<tr><td>The game's own statistics under your account number: when you log in, how long you play, how you get through the tutorial, which hero and bomb, your place in a match, in-game spending and rewards, which rewarded-ad buttons you press, why a connection dropped, ping. From the phone: a two-letter country code (from SIM, network or language region; your IP address is not used for statistics), phone model and Android version, memory size, average FPS and the share of slow frames in a match. In the EEA, the UK and Switzerland the model, country and FPS are sent only after you agree in the ads and analytics window</td><td>To see where players quit, what is badly balanced and which phones lag. No third-party service is used for this; the data stays on our server</td></tr>
+<tr><td>One irreversible hash of a Google ID and a time (section 7)</td><td>Stopping the invite bonus from being claimed twice</td></tr>
+</table>
+<p>We don't get the name or email of your Google account. When you link Google, the game sends the server a one-time code, the server exchanges it with Google for your Play Games player ID and takes nothing else. The game doesn't use your contacts, precise location, camera, microphone or files.</p>
+<p>Other players in the same match can see your nickname and what you do in the match.</p>
+
+<h2 id="retention">4. How long we keep it</h2>
+<ul>
+<li>Account data: as long as the account exists. There is currently no automatic deletion of inactive accounts.</li>
+<li>Database backups: the server makes a copy every 6 hours and keeps the latest 7. A deleted account drops out of the copies on its own, within 42 hours after deletion at the latest.</li>
+<li>Reports: 90 days.</li>
+<li>The game's own statistics (event records): 180 days, older records are deleted automatically. It is not part of the account database backups. When you delete your account, all its events are erased.</li>
+<li>Server technical log: no fixed period. The log is kept by the server's system and old entries are removed by size, not by age.</li>
+<li>The invite-protection hash: as long as the game runs (section 7).</li>
+</ul>
+
+<h2 id="ads">5. Ads and analytics</h2>
+<p>The game has rewarded ads. An ad plays only when you tap a button yourself. There are no forced ads during matches. Ads come from the Yandex Mobile Ads SDK, which ships with AppMetrica, Yandex's analytics service.</p>
+<p>These SDKs start with the game and automatically receive from your device:</p>
+<ul>
+<li>your Android Advertising ID and App set ID;</li>
+<li>your IP address and the approximate location (city or region) that follows from it;</li>
+<li>device model and manufacturer, Android version, language, time zone, mobile carrier, connection type;</li>
+<li>ad loading, impressions and taps;</li>
+<li>technical app data: crashes, errors, diagnostics.</li>
+</ul>
+<p>Purpose: to show ads and count impressions, to prevent ad fraud, and to find crashes. Yandex processes this data itself, under its own rules, and we don't get access to it:</p>
+<ul>
+<li><a href="https://yandex.com/legal/international_ads_privacy_policy">Yandex advertising privacy policy</a></li>
+<li><a href="https://yandex.com/legal/confidential/">Yandex privacy policy</a></li>
+<li><a href="https://yandex.com/legal/appmetrica_terms/">AppMetrica terms</a></li>
+</ul>
+<p>To limit this, reset or delete your advertising ID in Android settings (Google, then the Ads item; the name depends on your phone).</p>
+
+<h2 id="security">6. Security</h2>
+<p>The game connects to the server over two channels: UDP and, when UDP doesn't get through (some carriers block it), TCP. Both are encrypted: TCP with TLS, UDP with our own protocol on a key the game agrees with the server for every connection (X25519 and ChaCha20-Poly1305), checking the server key built into the game. Everything the game sends to our server is encrypted: sign-in, nickname, save, friends, chat, invitations, match actions. Very early test builds (before the Google Play release) could send UDP in clear text; they are not in the store. The device token gives access to the account, so the game never shows it. Only the developer has access to the server and the database.</p>
+<p>Traffic to the ads SDK and AppMetrica goes over HTTPS, as Yandex states.</p>
+
+<h2 id="invite">7. What remains after deletion</h2>
+<p>The "Invite a friend" bonus is given only to players with a linked Google account, once per person. So that deleting an account and starting a new one doesn't unlock the bonus a second time, the server keeps a separate record: an irreversible hash of the Google player ID (HMAC-SHA256 with a secret salt) and the time the bonus was credited. The ID itself isn't stored, the account number and nickname aren't tied to the hash, and deleting an account doesn't erase this record. It's kept as long as the game runs. It is abuse-prevention data and we share it with no one.</p>
+<p>Database backups (up to 42 hours) and the technical log also remain (section 4).</p>
+
+<h2 id="delete">8. Your rights and deleting your account</h2>
+<p><strong>In the game:</strong> open your profile (the nickname plate in the lobby), tap "Delete account" at the bottom and confirm twice. Your data is erased right away. You need a connection and no match may be running.</p>
+<p><strong>Without the game:</strong> email <a href="mailto:taimatavern@gmail.com">taimatavern@gmail.com</a>, details on the <a href="delete-account-en.html">Delete your account</a> page. We delete within 30 days, usually in a few.</p>
+<p>Deleted: the account and tokens, progress, nickname, friends, requests, blocks, recent opponents, the Google Play Games link, reports by you and about you, chat and party messages.</p>
+<p>You can also ask what data we hold, have it corrected or ask us to restrict processing, by writing to the same address. Data held by the ads SDK and AppMetrica is requested from Yandex; we'll tell you how.</p>
+
+<h2 id="children">9. Age</h2>
+<p>The game is for ages 13 and up. We don't knowingly collect data from children under 13. If you're a parent and think a child under 13 has played, write to us and we'll delete the account.</p>
+
+<h2 id="eea">10. Users in the EEA, the UK and Switzerland</h2>
+<p>If you play from the EEA, the United Kingdom or Switzerland, the game shows an "Ads and data" dialog on first launch with two equal buttons: "Allow" and "Don't allow". The ads SDK and analytics do not start until you choose. The game detects the country from the SIM card and the mobile network; if it can't tell, it shows the dialog. If you decline, we pass the refusal to the ad network (Yandex) and turn off AppMetrica statistics; the game works the same and rewarded ads remain. You can change the choice at any time: Settings, "Ad and data settings". In other countries there is no dialog and the SDK runs with its default settings. Rewarded ads are always voluntary: you only see one if you tap the button. You can reset your advertising ID in Android settings.</p>
+<p>Legal bases for what our server processes: performance of the agreement to use the game (account, progress, matches, friends) and our legitimate interest in preventing fraud and abuse (log, reports, bonus hash). You can request access, correction, deletion or restriction, object to processing, and complain to the data protection authority in your country. Write to <a href="mailto:taimatavern@gmail.com">taimatavern@gmail.com</a>.</p>
+<p>Data is stored on a server in Germany. The operator is located outside the EEA: Matvei Katkov, Thailand.</p>
+
+<h2 id="changes">11. Changes</h2>
+<p>If this policy changes, the new version will appear here with a new date. If the game starts collecting new data, we'll update the policy before that version ships.</p>
+</main>
+</body>
+</html>
